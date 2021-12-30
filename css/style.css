@@ -224,8 +224,8 @@ iframe {
 }
 
 .main-content .col1 .ui-jqchart {
-  margin: 1px;
   height: 45%;
+  margin: 1px;
   background-color: #2f3240;
 }
 
@@ -367,8 +367,8 @@ iframe {
 }
 
 .main-content .col2 .watchlist {
-  margin: 1px;
   height: 45%;
+  margin: 1px;
   background-color: #2f3240;
   overflow-y: auto;
   overflow-x: hidden;
@@ -434,9 +434,10 @@ iframe {
 }
 
 .main-content .col3 .placeorder {
+  height: 45%;
   margin: 1px;
-  height: 40%;
   background-color: #2f3240;
+  height: 40%;
 }
 
 .main-content .col3 .placeorder .row-radio {

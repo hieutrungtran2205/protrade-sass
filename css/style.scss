@@ -2,6 +2,18 @@ $body-color: #131722;
 $vnd-color: #f7941d;
 $theme-color: #2f3240;
 
+@mixin topTheme {
+    flex: 1 1;
+    margin: 1px;
+    background-color: $theme-color;
+}
+
+@mixin bottomTheme {
+    height: 45%;
+    margin: 1px;
+    background-color: $theme-color;
+}
+
 @mixin flexJustify($justify) {
     display: flex;
     justify-content: $justify;
@@ -205,15 +217,11 @@ iframe {
         position: relative;
 
         .chart {
-            flex: 1 1;
-            margin: 1px;
-            background-color: $theme-color;
+            @include topTheme();
         }
 
         .ui-jqchart {
-            margin: 1px;
-            height: 45%;
-            background-color: $theme-color;
+            @include bottomTheme();
         }
 
         .footer-col1 {
@@ -254,9 +262,7 @@ iframe {
         flex-direction: column;
 
         .history {
-            flex: 1 1;
-            margin: 1px;
-            background-color: $theme-color;
+            @include topTheme();
             overflow-y: auto;
             overflow-x: hidden;
 
@@ -331,9 +337,7 @@ iframe {
         }
 
         .watchlist {
-            margin: 1px;
-            height: 45%;
-            background-color: $theme-color;
+            @include bottomTheme();
             overflow-y: auto;
             overflow-x: hidden;
 
@@ -357,9 +361,7 @@ iframe {
         width: 400px;
 
         .orderbook {
-            flex: 1 1;
-            margin: 1px;
-            background-color: $theme-color;
+            @include topTheme();
 
             .title {
                 display: flex;
@@ -384,9 +386,8 @@ iframe {
         }
 
         .placeorder {
-            margin: 1px;
+            @include bottomTheme();
             height: 40%;
-            background-color: $theme-color;
 
             .row-radio {
                 height: 60px;
